@@ -160,9 +160,9 @@ hintList.append(hint2Var)
 hintList.append(hint3Var)
 
 
-txt1 = Label(fen, textvariable=txt1Var,height=0,width=5,font=("Courier", 70))
-txt2 = Label(fen, textvariable=txt2Var,height=0,width=5,font=("Courier", 70))
-txt3 = Label(fen, textvariable=txt3Var,height=0,width=5,font=("Courier", 70))
+txt1 = Label(fen, textvariable=txt1Var,height=0,width=5, pady=20, padx=20, font=("Courier", 50))
+txt2 = Label(fen, textvariable=txt2Var,height=0,width=5, pady=20, padx=20, font=("Courier", 50))
+txt3 = Label(fen, textvariable=txt3Var,height=0,width=5, pady=20, padx=20, font=("Courier", 50))
 hintRatioLabel = Label(fen, textvariable=hintRatio,height=0,width=15,font=("Courier", 10))
 
 txt1.grid(row = 0,column=1, sticky = "E")
@@ -201,8 +201,9 @@ hintRatioLabel.grid(row = 3,column=5, sticky = "W")
 def onReturnKey(event): 
     onOkButton()
 
-fen.bind('<Return>',    onReturnKey)  
+fen.bind('<Return>', onReturnKey)  
 
+onOkButton()
 fen.mainloop()
 
 
